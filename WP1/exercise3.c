@@ -1,7 +1,7 @@
-// (C) __Your names here, group: 16 __ (2023) 
+// (C) Nazli moghaddam , Marwa Selwaye, Jonna johansson , group: 16 __ (2023) 
 // Work package 1
 // Exercise 3
-// Submission code: XXXXXX (provided by your TA-s) 
+// Submission code: 123569KL 
 
 
 
@@ -101,7 +101,8 @@ char playAgain; // store user choice
        do {
      printf("Do you want to play again? (press y if yes, n if no.) \n ");
     scanf(" %c", &playAgain);
-
+    
+// the program doesnt allow the user to enter an invalid answer othan than y or n
     if(playAgain != 'y' && playAgain != 'Y'  && playAgain != 'N'  && playAgain != 'n') {
       printf("Please enter a valid input (y or n).\n");
     }

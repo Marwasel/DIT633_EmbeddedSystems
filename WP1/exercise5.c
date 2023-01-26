@@ -1,8 +1,7 @@
-// (C) __Your names here, group: 16 __ (2023) 
+// (C) Nazli moghaddam , Marwa Selwaye, Jonna johansson , group: 16 __ (2023) 
 // Work package 1
 // Exercise 5 
-// Submission code: XXXXXX (provided by your TA-s) 
-
+// Submission code: 123569KL 
 #include <stdio.h> 
 #include <stdlib.h> 
  
