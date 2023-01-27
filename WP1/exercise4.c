@@ -1,3 +1,10 @@
+// (C) Nazli moghaddam , Marwa Selwaye, Jonna johansson , group: 16 __ (2023) 
+// Work package 1
+// Exercise 3
+// Submission code: 123569KL 
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
