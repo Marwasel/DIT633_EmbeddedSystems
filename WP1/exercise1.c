@@ -29,7 +29,7 @@ int main(){
 
     do{
         //print to console when starting the program
-        printf("%s", "pick a number between 1-5, choose wisely!\n");
+        printf("%s", "Pick a number between 1-5, choose wisely!\n");
 
         //scans the userinput 
         scanf("%d", &input);

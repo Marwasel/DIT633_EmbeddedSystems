@@ -1,4 +1,4 @@
-// (C) Nazli moghaddam , Marwa Selwaye, Jonna Johansson , group: 16 __ (2023) 
+// (C) Nazli moghaddam , Marwa Selwaye, Jonna johansson , group: 16 __ (2023) 
 // Work package 1
 // Exercise 2
 // Submission code: 123569KL 
