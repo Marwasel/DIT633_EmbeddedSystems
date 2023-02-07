@@ -1,7 +1,7 @@
 // Jonna Johansson, Nazli Moghaddam, Marwa Selwaye: Group 16 2023
 // Work package 2
 // Exercise 1
-// Submission code:
+// Submission code:RG0456-v
 
 
 #include <stdio.h> 
