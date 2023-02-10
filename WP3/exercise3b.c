@@ -1,5 +1,7 @@
-// C++ code
-//
+// Jonna Johansson, Nazli Moghaddam, Marwa Selwaye: Group 16 (2023)
+// Work package 3
+// Exercise 3b
+// Submission code: RG0456-v
 
 
 // Matrix for the keypad with each key's position

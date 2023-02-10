@@ -1,3 +1,8 @@
+// Jonna Johansson, Nazli Moghaddam, Marwa Selwaye: Group 16 (2023)
+// Work package 3
+// Exercise 4
+// Submission code: RG0456-v
+
 #include <Keypad.h>
 
 

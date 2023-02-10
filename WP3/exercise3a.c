@@ -1,5 +1,7 @@
-// C++ code
-//
+// Jonna Johansson, Nazli Moghaddam, Marwa Selwaye: Group 16 (2023)
+// Work package 3
+// Exercise 2 // Exercise 3a 
+// Submission code: RG0456-v
 
 #define green 13
 #define red 12

@@ -1,3 +1,8 @@
+// Jonna Johansson, Nazli Moghaddam, Marwa Selwaye: Group 16 (2023)
+// Work package 3
+// Exercise 1
+// Submission code: RG0456-v
+
 int lightSpeed = 0;
 int buttonClick = 0;
 int led1 = 13;
