@@ -1,7 +1,7 @@
 // Jonna Johansson, Nazli Moghaddam, Marwa Selwaye: Group 16 (2023)
 // Work package 3
 // Exercise 5
-// Submission code:
+// Submission code:RG0456-v
 
 /*
 This program creates an array containing 10 random numbers between 1-99.
