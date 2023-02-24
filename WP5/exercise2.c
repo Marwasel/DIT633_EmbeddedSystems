@@ -1,3 +1,8 @@
+// Jonna Johansson, Nazli Moghaddam, Marwa Selwaye: Group 16 (2023)
+// Work package 5
+// Exercise 2
+// Submission code: ZsW0_2i
+
 // install DHTLIB
 
 #include "dht.h";
