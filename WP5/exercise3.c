@@ -6,18 +6,18 @@
 #include "dht.h";
 dht DHT;
 
-#define greenLED 13
-#define redLED 11
-#define blueLED 9
+#define gLED 13
+#define rLED 11
+#define bLED 9
 #define tempPin A0
 #define lightPin A1
 
 void setup()
 {
   Serial.begin(9600); //initialize the serial
-  pinMode(greenLED, OUTPUT); // green as the output pin, which will generate an electrical signal.
-  pinMode(redLED, OUTPUT); // red as the output pin, which will generate an electrical signal.
-  pinMode(blueLED, OUTPUT); // blue as the output pin, which will generate an electrical signal.
+  pinMode(gLED, OUTPUT); // green as the output pin, which will generate an electrical signal.
+  pinMode(rLED, OUTPUT); // red as the output pin, which will generate an electrical signal.
+  pinMode(bLED, OUTPUT); // blue as the output pin, which will generate an electrical signal.
  // pinMode(10, OUTPUT);
   
   pinMode(tempPin, INPUT);
@@ -64,68 +64,68 @@ void loop()
   if (lightReading == 0){ //if light intensity value is 0
     // if temperature is less than -12C, power on the green LED
     if (tempInCelsius <= -12){ 
-    	digitalWrite(greenLED, HIGH); //green LED on
-    	digitalWrite(redLED, LOW); // red LED off
-      	digitalWrite(blueLED, LOW); // blue LED off
+    	digitalWrite(gLED, HIGH); //green LED on
+    	digitalWrite(rLED, LOW); // red LED off
+      	digitalWrite(bLED, LOW); // blue LED off
     }
     else{// If the temperature is higher than -12
          // Power on the red LED
-    	digitalWrite(redLED, HIGH);// red LED on 
-      	digitalWrite(greenLED, LOW); // green LED off
-      	digitalWrite(blueLED, LOW); // blue LED off
+    	digitalWrite(rLED, HIGH);// red LED on 
+      	digitalWrite(gLED, LOW); // green LED off
+      	digitalWrite(bLED, LOW); // blue LED off
     }
   }
   // if the light intensity is between 1 and 20
   else if (lightReading >= 1 && lightReading <= 20) {
     // if the temperature is between -12 and 0, Power on the green LED
     if(tempInCelsius > -12 && tempInCelsius <= 0){ 
-      	digitalWrite(redLED, LOW); // red LED off
-      	digitalWrite(greenLED, HIGH); // green LED on 
-      	digitalWrite(blueLED, LOW); // blue LED off
+      	digitalWrite(rLED, LOW); // red LED off
+      	digitalWrite(gLED, HIGH); // green LED on 
+      	digitalWrite(bLED, LOW); // blue LED off
     }
     // if the temperature is more than 0, Power on the red LED
     else if (tempInCelsius > 0){ 
-        digitalWrite(redLED, HIGH); // red LED on 
-      	digitalWrite(greenLED, LOW); // green LED off
-      	digitalWrite(blueLED, LOW); // blue LED off
+        digitalWrite(rLED, HIGH); // red LED on 
+      	digitalWrite(gLED, LOW); // green LED off
+      	digitalWrite(bLED, LOW); // blue LED off
     }
     else{ // If the temperature is lower than -12, Power on the blue led
-        digitalWrite(redLED, LOW); // red LED off
-      	digitalWrite(greenLED, LOW); // green LED off
-      	digitalWrite(blueLED, HIGH); // blue LED on 
+        digitalWrite(rLED, LOW); // red LED off
+      	digitalWrite(gLED, LOW); // green LED off
+      	digitalWrite(bLED, HIGH); // blue LED on 
     }
   }
   // if the light intensity isbetween 21 and 60
   else if (lightReading >= 21 && lightReading <= 55){ 
     // if the temperature is betwwen 0 and 20, Power on the green LED
     if (tempInCelsius >= 0 && tempInCelsius <= 20){ 
-    	digitalWrite(redLED, LOW); // red LED off
-      	digitalWrite(greenLED, HIGH); // green LED on 
-      	digitalWrite(blueLED, LOW); // blue LED off
+    	digitalWrite(rLED, LOW); // red LED off
+      	digitalWrite(gLED, HIGH); // green LED on 
+      	digitalWrite(bLED, LOW); // blue LED off
     }
     else if(tempInCelsius > 20){ // if the temperature is more than 20, Power on the red LED
-        digitalWrite(redLED, HIGH); // red LED on 
-      	digitalWrite(greenLED, LOW); // greenLED off
-      	digitalWrite(blueLED, LOW); // blue LED off
+        digitalWrite(rLED, HIGH); // red LED on 
+      	digitalWrite(gLED, LOW); // greenLED off
+      	digitalWrite(bLED, LOW); // blue LED off
     }
     else{ // else If the temperature is lower than 0, Power on the blue LED
-        digitalWrite(redLED, LOW);// red LED off
-      	digitalWrite(greenLED, LOW); // green light off
-      	digitalWrite(blueLED, HIGH); // blue LED on 
+        digitalWrite(rLED, LOW);// red LED off
+      	digitalWrite(gLED, LOW); // green light off
+      	digitalWrite(bLED, HIGH); // blue LED on 
     }
   }
   // finally, if the light intensity value is between 61 and 100
   else{ 
     if(tempInCelsius >= 21){ // if the temperature is more than 21, Power on the green LED
-    	digitalWrite(redLED, LOW); // red LED off
-      	digitalWrite(greenLED, HIGH); // green LED on 
-      	digitalWrite(blueLED, LOW); // blue LED off
+    	digitalWrite(rLED, LOW); // red LED off
+      	digitalWrite(gLED, HIGH); // green LED on 
+      	digitalWrite(bLED, LOW); // blue LED off
     }
     // If the temperature is lower than 21C, Power on the blue LED
     else{
-    	digitalWrite(redLED, LOW); // red LED off
-      	digitalWrite(greenLED, LOW); // green LED off
-      	digitalWrite(blueLED, HIGH); // blue LED on 
+    	digitalWrite(rLED, LOW); // red LED off
+      	digitalWrite(gLED, LOW); // green LED off
+      	digitalWrite(bLED, HIGH); // blue LED on 
     }
   
   }

@@ -8,11 +8,11 @@
 #include "dht.h";
 dht DHT;
 
-#define greenLED 13
-#define yellowLED 12
-#define whiteLED 11
-#define blueLED 10
-#define redLED 8
+#define gLED 13
+#define yLED 12
+#define wLED 11
+#define bLED 10
+#define rLED 8
 #define tempPin A0
 
 // Initialize the temperatures ranges
@@ -27,11 +27,11 @@ void setup()
  // Start the serial port
     Serial.begin(9600);
  // Set the led pins to output
-    pinMode(greenLED, OUTPUT);// set green led to OUTPUT,which will generate an elecatrical signal.
-    pinMode(yellowLED, OUTPUT);// set yellow led to OUTPUT,which will generate an elecatrical signal.
-    pinMode(whiteLED, OUTPUT);// set white led to OUTPUT,which will generate an elecatrical signal.
-    pinMode(blueLED, OUTPUT);// set blue led to OUTPUT,which will generate an elecatrical signal.
-    pinMode(redLED, OUTPUT);// set red led to OUTPUT,which will generate an elecatrical signal.
+    pinMode(gLED, OUTPUT);// set green led to OUTPUT,which will generate an elecatrical signal.
+    pinMode(yLED, OUTPUT);// set yellow led to OUTPUT,which will generate an elecatrical signal.
+    pinMode(wLED, OUTPUT);// set white led to OUTPUT,which will generate an elecatrical signal.
+    pinMode(bLED, OUTPUT);// set blue led to OUTPUT,which will generate an elecatrical signal.
+    pinMode(rLED, OUTPUT);// set red led to OUTPUT,which will generate an elecatrical signal.
   
   pinMode(tempPin, INPUT);//Set the temp Pin as an input, which will detect an incoming electrical signal
   
@@ -67,46 +67,46 @@ Serial.print(tempInCelcius); Serial.println("in degrees C");
   
 //if temperature lower than 0 all leds are off
 if(tempInCelcius<temp1){
-    digitalWrite(greenLED, LOW);//LED 1 off
-    digitalWrite(yellowLED, LOW);//LED 2 off
-    digitalWrite(whiteLED, LOW);//LED 3 off
-    digitalWrite(blueLED, LOW);//LED 4 off
-    digitalWrite(redLED, LOW);//LED 5 off
+    digitalWrite(gLED, LOW);//LED 1 off
+    digitalWrite(yLED, LOW);//LED 2 off
+    digitalWrite(wLED, LOW);//LED 3 off
+    digitalWrite(bLED, LOW);//LED 4 off
+    digitalWrite(rLED, LOW);//LED 5 off
 } //if temperature between 0 and 19, 1 led on
 else if(tempInCelcius>=temp1&&tempInCelcius<temp2){
-    digitalWrite(greenLED, HIGH);//LED 1 on
-    digitalWrite(yellowLED, LOW);//LED 2 off
-    digitalWrite(whiteLED, LOW);//LED 3 off
-    digitalWrite(blueLED, LOW);//LED 4 off
-    digitalWrite(redLED, LOW);//LED 5 off
+    digitalWrite(gLED, HIGH);//LED 1 on
+    digitalWrite(yLED, LOW);//LED 2 off
+    digitalWrite(wLED, LOW);//LED 3 off
+    digitalWrite(bLED, LOW);//LED 4 off
+    digitalWrite(rLED, LOW);//LED 5 off
 }//if temperature between 20 and 49, 2 leds on
 else if(tempInCelcius>=temp2&&tempInCelcius<temp3){
-    digitalWrite(greenLED, HIGH);//LED 1 on
-    digitalWrite(yellowLED, HIGH);//LED 2 on
-    digitalWrite(whiteLED, LOW);//LED 3 off
-    digitalWrite(blueLED, LOW);//LED 4 off
-    digitalWrite(redLED, LOW);//LED 5 off
+    digitalWrite(gLED, HIGH);//LED 1 on
+    digitalWrite(yLED, HIGH);//LED 2 on
+    digitalWrite(wLED, LOW);//LED 3 off
+    digitalWrite(bLED, LOW);//LED 4 off
+    digitalWrite(rLED, LOW);//LED 5 off
 } //if temperature betwwen 50 and 69, 3 leds on
 else if(tempInCelcius>=temp3&&tempInCelcius<temp4){
-    digitalWrite(greenLED, HIGH);//LED 1 on
-    digitalWrite(yellowLED, HIGH);//LED 2 on
-    digitalWrite(whiteLED, HIGH);//LED 3 on
-    digitalWrite(blueLED, LOW);//LED 4 off
-    digitalWrite(redLED, LOW);//LED 5 off
+    digitalWrite(gLED, HIGH);//LED 1 on
+    digitalWrite(yLED, HIGH);//LED 2 on
+    digitalWrite(wLED, HIGH);//LED 3 on
+    digitalWrite(bLED, LOW);//LED 4 off
+    digitalWrite(rLED, LOW);//LED 5 off
 }//if temperature betwwen 70 and 99, 4 leds on
 else if(tempInCelcius>=temp4&&tempInCelcius<temp5){
-   digitalWrite(greenLED, HIGH);//LED 1 on
-    digitalWrite(yellowLED, HIGH);//LED 2 on
-    digitalWrite(whiteLED, HIGH);//LED 3 on
-    digitalWrite(blueLED, HIGH);//LED 4 on
-    digitalWrite(redLED, LOW);//LED 5 off
+   digitalWrite(gLED, HIGH);//LED 1 on
+    digitalWrite(yLED, HIGH);//LED 2 on
+    digitalWrite(wLED, HIGH);//LED 3 on
+    digitalWrite(bLED, HIGH);//LED 4 on
+    digitalWrite(rLED, LOW);//LED 5 off
 }//if temperature is higher than 100, all leds are on
 else {
-    digitalWrite(greenLED, HIGH);//LED 1 on
-    digitalWrite(yellowLED, HIGH);//LED 2 on
-    digitalWrite(whiteLED, HIGH);//LED 3 on
-    digitalWrite(blueLED, HIGH);//LED 4 on
-    digitalWrite(redLED, HIGH);//LED 5 on
+    digitalWrite(gLED, HIGH);//LED 1 on
+    digitalWrite(yLED, HIGH);//LED 2 on
+    digitalWrite(wLED, HIGH);//LED 3 on
+    digitalWrite(bLED, HIGH);//LED 4 on
+    digitalWrite(rLED, HIGH);//LED 5 on
 }
 }
 
